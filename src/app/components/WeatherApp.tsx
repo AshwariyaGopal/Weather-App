@@ -6,7 +6,7 @@ import OutputCard from '../components/OutputCard'
 
 export default function WeatherApp() {
     const [weatherData,setWeatherData] = useState(null);
-    const handleSearch = async (city:any) => {
+    const handleSearch = async (city:string) => {
         const API_KEY = "13627170f98e4094882124011251402"
         try {
             const response = await fetch(
